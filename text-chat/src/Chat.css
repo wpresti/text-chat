@@ -1,0 +1,20 @@
+.chatTextBox {
+    position:fixed;
+    bottom: 10px;
+    width: 95%;
+}
+#sendBtn{
+    position:absolute;
+    
+}
+.userList{
+    position:absolute;
+    right: 1%;
+    top: 1%
+}
+/* .chatBox{
+    border:1px solid black;
+    position: absolute;
+    bottom: 1%;
+    top:25%;
+} */
