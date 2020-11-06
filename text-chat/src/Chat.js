@@ -58,28 +58,30 @@ class Chat extends React.Component {
         //window.localStorage.setItem("userName","fuck")
         console.log("this.myContext", this.MyContext)
         console.log("chat page", window.localStorage.getItem("userName"))
-        return <div className="chat">
-            <h1>Chat </h1>
-            <p>hello {window.localStorage.getItem("userName")}</p>
-            <button id="logout" onClick={this.LogOut}>Logout</button>
-            <div className="chatBox">
+        return <div className="gridContainer">
+            <div className="chat">
+                <h1>Chat </h1>
+                <p>hello {window.localStorage.getItem("userName")}</p>
+                <button id="logout" onClick={this.LogOut}>Logout</button>
+                <div className="chatBox">
 
-                <dl id="msgList">
-                    {/* <dt>Coffee</dt>
+                    <dl id="msgList">
+                        {/* <dt>Coffee</dt>
                 <dd>- black hot drink</dd>
                 <dt>Milk</dt>
                 <dd>- white cold drink</dd> */}
-                </dl>
-                <div className="userList">
-                    <h1>User List</h1>
-                    <dl id="userList">
                     </dl>
-                </div>
-                <div className="chatTextBox">
-                    <input type="text" id="textBox"></input>
-                    <button id="sendBtn" onClick={this.ActionLink}>Send</button>
-                </div>
+                    <div className="userList">
+                        <h1>User List</h1>
+                        <dl id="userList">
+                        </dl>
+                    </div>
+                    <div className="chatTextBox">
+                        <input type="text" id="textBox"></input>
+                        <button id="sendBtn" onClick={this.ActionLink}>Send</button>
+                    </div>
 
+                </div>
             </div>
         </div>
     }
